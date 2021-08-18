@@ -4,8 +4,8 @@ window.addEventListener("scroll", function () {
     Navbar.classList.toggle("PassScroll", window.scrollY > 0);
   });
 
-  $(document).ready(function () {
-    $('.menu-toggle').on('click', function () {
-        $(this).toggleClass('open');
-    });
-});
+  const Menu = document.querySelector(".menu-toggle");
+
+  Menu.addEventListener("click", () => {
+      Menu.classList.toggle("open");
+  });

@@ -14,7 +14,8 @@
 }
 
 .container {
-  padding: 0 2.5rem;
+  width: 100%;
+  padding: 0 3rem;
 }
 
 .wrapContent {
@@ -24,46 +25,35 @@
   justify-content: space-between;
 }
 
+.circleGOLD::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(1.5rem);
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  background: var(--gold);
+  border-radius: 50%;
+}
+
 /* Display */
 
 .hiddenWeb {
   display: none;
 }
 
+.hiddenMobile {
+  display: block;
+}
+
 /* Grid */
 
-.layout-weight-12,
-.layout-weight-8,
-.layout-weight-6,
-.layout-weight-4,
-.layout-weight-2 {
-  position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.layout-weight-12 {
-  width: 100%;
-}
-
-.layout-weight-10 {
-  width: 80%;
-}
-
-.layout-weight-8 {
-  width: 65%;
-}
-
-.layout-weight-6 {
+.layout-half {
   width: 50%;
-}
-
-.layout-weight-4 {
-  width: 35%;
-}
-
-.layout-weight-2 {
-  width: 20%;
+  position: relative;
 }
 
 .position-relative {
@@ -110,12 +100,31 @@
   transform: translate(-50%, -50%);
 }
 
+.toParentTop {
+  position: absolute;
+  top: 0;
+}
+
+.toParentBottom {
+  position: absolute;
+  bottom: 0;
+}
+
 .textCenter {
   text-align: center;
 }
 
-.additinal-margin {
+.additional-margin {
   margin: 8rem 0;
+}
+
+.Btn-primary {
+  background: transparent;
+  cursor: pointer;
+  border: 1.5px solid var(--white);
+  outline: none;
+  padding: 10px 30px;
+  color: var(--white);
 }
 
 body {
@@ -141,7 +150,7 @@ body {
 
 .PassScroll {
   background: var(--secondColor);
-  border: 0px;
+  border-bottom: 1.5px solid var(--secondColor);
 }
 
 .navbar .LogoNav {
@@ -208,6 +217,23 @@ body {
   transform: rotate(-450deg) translateX(-0.7rem);
 }
 
+footer {
+  border-top: 1.5px solid var(--white);
+  height: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.FooterContentRight h3,
+.FooterContentLeft h3 {
+  color: var(--white);
+  line-height: 30px;
+}
+
+.FooterContentLeft:nth-child(2) {
+  margin-left: 100px;
+}
+
 @media only screen and (max-width: 725px) {
   .hiddenMobile {
     display: none;
@@ -217,11 +243,7 @@ body {
     display: block;
   }
 
-  .layout-weight-12,
-  .layout-weight-8,
-  .layout-weight-6,
-  .layout-weight-4,
-  .layout-weight-2 {
+  .layout-half {
     width: 100%;
   }
 
@@ -236,5 +258,26 @@ body {
 
   .navbar .menu-toggle {
     display: flex;
+  }
+
+  footer {
+    height: 180px;
+  }
+
+  .left-footer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right-footer {
+    width: 100%;
+  }
+
+  .MobileFooterCenter {
+    justify-content: space-around;
+  }
+
+  .FooterContentRight {
+    text-align: center;
   }
 }

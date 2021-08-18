@@ -113,13 +113,227 @@
 }
 
 .BerandaStar-2 {
-  left: 0%;
+  left: 2.5%;
   bottom: -15%;
 }
 
 .BerandaStar-3 {
   left: -15%;
   bottom: -15%;
+}
+
+.TitleSelected {
+  margin-bottom: 4rem;
+}
+
+.TitleSelected img {
+  width: 50px;
+}
+
+.TitleSelected span {
+  font-size: 42px;
+  margin: 0 20px;
+  color: var(--white);
+}
+
+.CardThreePart {
+  width: 31%;
+  height: auto;
+  position: relative;
+  border: 2px solid var(--white);
+  padding: 25px 20px 0px 20px;
+  border-radius: 10px;
+}
+
+.CardThreePart h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.CardThreePart h1 {
+  font-size: 42px;
+  color: var(--white);
+}
+
+.CardThreePart:nth-child(2) {
+  margin: 0 2%;
+}
+
+.CardBottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.SelectedStar-1,
+.SelectedStar-2 {
+  position: absolute;
+}
+
+.SelectedStar-1 {
+  width: 150px;
+  right: 0;
+}
+
+.SelectedStar-2 {
+  width: 150px;
+  left: 0;
+  bottom: 0;
+}
+
+.TitleInfo h1 {
+  font-size: 64px;
+  color: var(--white);
+}
+
+.TitleInfo h3 {
+  color: var(--gold);
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.CardTwoPart {
+  width: 48%;
+  height: auto;
+  position: relative;
+  border: 2px solid var(--white);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.CardTwoPart:first-child {
+  margin-right: 1px;
+}
+
+.CardTwoPart:last-child {
+  margin-left: 1px;
+}
+
+.CardTwoPart h1 {
+  font-size: 42px;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.CardTwoPart h1 span {
+  color: var(--gold);
+}
+
+.CardTwoPart p {
+  font-size: 18px;
+  color: var(--white);
+  width: 85%;
+}
+
+.CardTwoPart img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  width: 40px;
+}
+
+.wrapperPost h1 {
+  font-size: 42px;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.wrapperPost p {
+  font-size: 24px;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.cardInfo {
+  width: 34%;
+  height: auto;
+  position: relative;
+  border: 2px solid var(--white);
+  border-radius: 10px;
+}
+
+.cardInfo img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.ContentInfo {
+  padding: 20px 30px;
+}
+
+.ContentInfo h2 {
+  color: var(--white);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.ContentInfo p {
+  color: var(--white);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.ContentInfo .DetailIcon img {
+  width: 25px;
+}
+
+.ContentInfo .DetailIcon img:nth-child(2) {
+  margin: 0 5px;
+}
+
+.left-layout {
+  width: 30%;
+  position: relative;
+}
+
+.cardFull {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border: 2px solid var(--white);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.WrapperUMKM h2 {
+  color: var(--white);
+  font-size: 32px;
+}
+
+.WrapperUMKM h2 span {
+  color: var(--gold);
+}
+
+.WrapperUMKM h1 {
+  font-size: 42px;
+  color: var(--white);
+  margin: 1.5rem 0;
+}
+
+.WrapperUMKM p {
+  color: var(--white);
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+}
+
+.imgPenyu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imgPenyu:nth-child(2) {
+  display: none;
+  justify-content: flex-start;
+}
+
+.btn-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-left {
+  display: none;
+  justify-content: flex-start;
 }
 
 @media only screen and (max-width: 725px) {
@@ -135,5 +349,58 @@
 
   .BerandaIMG {
     width: 100%;
+  }
+
+  .CardThreePart {
+    width: 100%;
+  }
+
+  .CardThreePart:nth-child(2) {
+    margin: 5% 0;
+  }
+
+  .CardBottom {
+    position: initial;
+  }
+
+  .SelectedStar-1,
+  .SelectedStar-2 {
+    display: none;
+  }
+
+  .CardTwoPart {
+    margin: 5% 0;
+    width: 100%;
+  }
+
+  .cardInfo {
+    margin: 5% 0;
+    width: 100%;
+  }
+
+  .left-layout {
+    width: 100%;
+  }
+
+  .imgPenyu {
+    display: none;
+  }
+
+  .imgPenyu:nth-child(2) {
+    display: flex;
+    width: 100%;
+  }
+
+  .WrapperUMKM h2 {
+    margin-bottom: 20px;
+  }
+
+  .btn-right {
+    display: none;
+  }
+
+  .btn-left {
+    display: flex;
+    justify-content: flex-start;
   }
 }
