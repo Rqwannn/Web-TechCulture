@@ -1,0 +1,29 @@
+@import url(style.css);
+
+.edu-content{
+    width: 100%;
+}
+.title{
+    display: block;
+}
+.title-content{
+    padding: 40px 0;
+    font-size: 42px;
+    width: 100%;
+    line-height: 40px;
+    color: var(--white);
+}
+.mini-title-content{
+    color: var(--gold);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+.mini-title-content p{
+    width: 70%;
+}
