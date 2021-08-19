@@ -4,9 +4,14 @@
   padding: 40px 0;
   font-size: 42px;
   width: 100%;
+  text-align: center;
   line-height: 40px;
   position: relative;
   color: var(--white);
+}
+
+.Left-information span {
+  font-size: 25px;
 }
 
 .Left-information::after {
@@ -62,10 +67,17 @@
 
 .bottom-information {
   padding: 20px 0;
+  width: 100%;
   background-color: var(--gold);
 }
 
-.contents-bottom-information {
+.contents-bottom-information h1 {
+  font-size: 28px;
+  color: var(--white);
+}
+
+.contents-bottom-information h2 {
+  font-size: 36px;
   color: var(--white);
 }
 
@@ -120,6 +132,12 @@
 .BerandaStar-3 {
   left: -15%;
   bottom: -15%;
+}
+
+.CostumPosisi {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
 }
 
 .TitleSelected {
@@ -187,6 +205,7 @@
 
 .TitleInfo h3 {
   color: var(--gold);
+  font-size: 24px;
   margin: 1.5rem 0 2.5rem 0;
 }
 
@@ -336,19 +355,241 @@
   justify-content: flex-start;
 }
 
-@media only screen and (max-width: 725px) {
+@media (min-width: 0px) and (max-width: 765px) {
+  .backImage {
+    width: 264px;
+    height: 319px;
+  }
+
+  .gambar-utama {
+    height: 400px;
+  }
+
+  .wrapperImage {
+    padding-top: 6rem;
+  }
+
   .BerandaStar-1,
   .BerandaStar-2,
   .BerandaStar-3 {
     display: none;
   }
 
+  .posisi-mawar-1,
+  .posisi-mawar-2 {
+    width: 155px;
+    height: 155px;
+  }
+
+  .posisi-mawar-2 {
+    right: -15px;
+    bottom: -65px;
+  }
+
+  .posisi-mawar-1 {
+    left: -40px;
+    top: 50px;
+  }
+
   .wrapperIntroContent p {
+    font-size: 18px;
     margin-top: 20px;
   }
 
-  .BerandaIMG {
+  .Left-information {
+    font-size: 26px;
+  }
+
+  .Left-information span {
+    font-size: 20px;
+  }
+
+  .Left-information::after {
     width: 100%;
+  }
+
+  .contents-bottom-information h1 {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+
+  .contents-bottom-information h2 {
+    font-size: 18px;
+  }
+
+  .BerandaIMG {
+    max-width: 100%;
+  }
+
+  .TitleSelected span {
+    font-size: 32px;
+  }
+
+  .TitleSelected img {
+    display: none;
+  }
+
+  .SelectedStar-1,
+  .SelectedStar-2 {
+    display: none;
+  }
+
+  .CardThreePart {
+    width: 100%;
+  }
+
+  .CardThreePart:nth-child(2) {
+    margin: 5% 0;
+  }
+
+  .CardThreePart img {
+    max-width: 100%;
+  }
+
+  .CardBottom {
+    position: initial;
+  }
+
+  .CardThreePart h2 {
+    font-size: 21px;
+  }
+
+  .CardThreePart h1 {
+    font-size: 24px;
+  }
+
+  .TitleInfo h1 {
+    font-size: 32px;
+  }
+
+  .TitleInfo h3 {
+    font-size: 18px;
+  }
+
+  .CardTwoPart {
+    margin: 5% 0;
+    width: 100%;
+  }
+
+  .CardTwoPart h1 {
+    font-size: 32px;
+  }
+
+  .CardTwoPart p {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .CardTwoPart img {
+    position: initial;
+    transform: translateY(0%);
+  }
+
+  .left-layout {
+    width: 100%;
+  }
+
+  .wrapperPost h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .wrapperPost p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .MobileCenter {
+    display: flex;
+    justify-content: center;
+  }
+
+  .left-layout img {
+    margin-bottom: 20px;
+  }
+
+  .cardInfo {
+    margin: 5% 0;
+    width: 100%;
+  }
+
+  .ContentInfo h2 {
+    font-size: 25px;
+  }
+
+  .ContentInfo h3 {
+    font-size: 15px;
+  }
+
+  .imgPenyu {
+    display: none;
+  }
+
+  .imgPenyu:nth-child(2) {
+    display: flex;
+    width: 100%;
+  }
+
+  .btn-right {
+    display: none;
+  }
+
+  .btn-left {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .WrapperUMKM h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .WrapperUMKM h1 {
+    font-size: 32px;
+  }
+
+  .WrapperUMKM {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .bottom-information {
+    max-width: 100%;
+  }
+
+  .BerandaStar-1,
+  .BerandaStar-2,
+  .BerandaStar-3 {
+    display: none;
+  }
+
+  .sideLine {
+    display: none;
+  }
+
+  .CostumLeftTab {
+    margin-left: 3rem;
+  }
+
+  .wrapperIntroContent p {
+    margin-top: 20px;
+    font-size: 24px;
+    margin-right: 15px;
+  }
+
+  .BerandaIMG {
+    max-width: 100%;
+  }
+
+  .BerandaIMG:nth-child(2) {
+    margin: 20px 0;
+  }
+
+  .CostumPosisi {
+    justify-content: flex-end;
   }
 
   .CardThreePart {
@@ -368,9 +609,21 @@
     display: none;
   }
 
+  .contents-bottom-information h1 {
+    font-size: 24px;
+  }
+
+  .contents-bottom-information h2 {
+    font-size: 32px;
+  }
+
   .CardTwoPart {
     margin: 5% 0;
     width: 100%;
+  }
+
+  .CardTwoPart p {
+    font-size: 24px;
   }
 
   .cardInfo {
@@ -380,6 +633,20 @@
 
   .left-layout {
     width: 100%;
+  }
+
+  .wrapperPost h1 {
+    text-align: center;
+  }
+
+  .wrapperPost p {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .MobileCenter {
+    display: flex;
+    justify-content: center;
   }
 
   .imgPenyu {

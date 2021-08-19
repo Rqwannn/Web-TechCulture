@@ -18,6 +18,10 @@
   padding: 0 3rem;
 }
 
+.initia-barrier {
+  margin: 4rem 0 0 0;
+}
+
 .wrapContent {
   display: inline-flex;
   flex-wrap: wrap;
@@ -127,6 +131,10 @@
   color: var(--white);
 }
 
+.Btn-primary img {
+  width: 20px;
+}
+
 body {
   overflow-x: hidden;
   background-color: var(--primaryColor);
@@ -234,7 +242,23 @@ footer {
   margin-left: 100px;
 }
 
-@media only screen and (max-width: 725px) {
+@media (min-width: 0px) and (max-width: 765px) {
+  .additional-margin {
+    margin: 6rem 0;
+  }
+
+  .initia-barrier {
+    margin: 3rem 0 0 0;
+  }
+
+  .navbar {
+    max-width: 100%;
+  }
+
+  .navbar .LogoNav {
+    font-size: 20px;
+  }
+
   .hiddenMobile {
     display: none;
   }
@@ -245,6 +269,63 @@ footer {
 
   .layout-half {
     width: 100%;
+  }
+
+  .navbar {
+    padding: 0 30px;
+    justify-content: space-between;
+  }
+
+  .navbar .nav-links ul {
+    display: none;
+  }
+
+  .navbar .menu-toggle {
+    display: flex;
+  }
+
+  footer {
+    height: 200px;
+  }
+
+  .left-footer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right-footer {
+    width: 100%;
+  }
+
+  .MobileFooterCenter {
+    justify-content: center;
+  }
+
+  .FooterContentRight {
+    text-align: center;
+  }
+
+  .FooterContentRight h3,
+  .FooterContentLeft h3 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .Btn-primary {
+    font-size: 24px;
+  }
+
+  .Btn-primary img {
+    width: 30px;
+  }
+
+  .layout-half {
+    max-width: 100%;
   }
 
   .navbar {
