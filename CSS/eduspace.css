@@ -1,5 +1,12 @@
 @import url(style.css);
 
+.make-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .edu-content{
     width: 100%;
 }
@@ -26,4 +33,63 @@
 }
 .mini-title-content p{
     width: 70%;
+}
+.edu-nav{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.all-edu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+
+}
+
+.edu-card{
+    width: 100%;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    
+}
+.edu-card a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.eduFullCard{
+    margin: 5% 0;
+    width: 100%;
+}
+
+.eduFullCard h1 {
+    font-size: 42px;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+.eduFullCard h1 span {
+    color: var(--gold);
+  }
+  
+.eduFullCard p {
+    font-size: 18px;
+    color: var(--white);
+    width: 85%;
+}
+
+.eduFullCard img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    width: 40px;
 }
