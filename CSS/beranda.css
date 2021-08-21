@@ -501,11 +501,6 @@
     text-align: center;
   }
 
-  .MobileCenter {
-    display: flex;
-    justify-content: center;
-  }
-
   .left-layout img {
     margin-bottom: 20px;
   }
@@ -517,10 +512,6 @@
 
   .ContentInfo h2 {
     font-size: 25px;
-  }
-
-  .ContentInfo h3 {
-    font-size: 15px;
   }
 
   .imgPenyu {
@@ -642,11 +633,6 @@
   .wrapperPost p {
     margin-bottom: 30px;
     text-align: center;
-  }
-
-  .MobileCenter {
-    display: flex;
-    justify-content: center;
   }
 
   .imgPenyu {

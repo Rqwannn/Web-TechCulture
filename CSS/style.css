@@ -13,12 +13,17 @@
   box-sizing: border-box;
 }
 
+#ParentWrapper {
+  margin: 0 auto;
+  width: 1250px;
+}
+
 .container {
   width: 100%;
   padding: 0 3rem;
 }
 
-.initia-barrier {
+.initial-barrier {
   margin: 4rem 0 0 0;
 }
 
@@ -144,7 +149,7 @@ body {
   z-index: 100;
   top: 0;
   left: 0;
-  position: fixed;
+  position: sticky;
   color: var(--white);
   display: flex;
   justify-content: space-around;
@@ -243,8 +248,17 @@ footer {
 }
 
 @media (min-width: 0px) and (max-width: 765px) {
+  #ParentWrapper {
+    width: auto;
+  }
+
+  .MobileCenter {
+    display: flex;
+    justify-content: center;
+  }
+
   .additional-margin {
-    margin: 6rem 0;
+    margin: 4rem 0;
   }
 
   .initia-barrier {
@@ -312,6 +326,10 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #ParentWrapper {
+    width: auto;
+  }
+
   .container {
     max-width: 100%;
   }
