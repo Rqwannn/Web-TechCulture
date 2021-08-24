@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 
 :root {
   --primaryColor: #151b22;
@@ -16,6 +16,10 @@
 #ParentWrapper {
   margin: 0 auto;
   width: 1250px;
+}
+
+.bottom-5 {
+  margin-bottom: 5%;
 }
 
 .container {
@@ -55,6 +59,10 @@
 }
 
 .hiddenMobile {
+  display: block;
+}
+
+.hiddenTab {
   display: block;
 }
 
@@ -136,6 +144,12 @@
   color: var(--white);
 }
 
+.btn-group {
+  margin: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
 .Btn-primary img {
   width: 20px;
 }
@@ -143,6 +157,7 @@
 body {
   overflow-x: hidden;
   background-color: var(--primaryColor);
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar {
@@ -332,6 +347,14 @@ footer {
 
   .container {
     max-width: 100%;
+  }
+
+  .hiddenTab {
+    display: none;
+  }
+
+  .hiddenWeb {
+    display: block;
   }
 
   .Btn-primary {

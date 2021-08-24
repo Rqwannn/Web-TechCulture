@@ -476,7 +476,6 @@
   }
 
   .CardTwoPart p {
-    font-size: 16px;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -557,7 +556,8 @@
     display: none;
   }
 
-  .sideLine {
+  .sideLine,
+  .sideLine-2 {
     display: none;
   }
 
@@ -655,5 +655,49 @@
   .btn-left {
     display: flex;
     justify-content: flex-start;
+  }
+
+  .ContentInfo h2 {
+    font-size: 36px;
+  }
+
+  .ContentInfo p {
+    font-size: 24px;
+  }
+
+  .imgPenyu {
+    display: none;
+  }
+
+  .imgPenyu:nth-child(2) {
+    display: flex;
+    width: 100%;
+  }
+
+  .btn-right {
+    display: none;
+  }
+
+  .btn-left {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .cardFull .CostumTabLayout {
+    width: 100%;
+  }
+
+  .WrapperUMKM h2 {
+    max-width: 100%;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .WrapperUMKM h1 {
+    font-size: 32px;
+  }
+
+  .WrapperUMKM p {
+    font-size: 24px;
   }
 }
