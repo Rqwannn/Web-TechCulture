@@ -66,6 +66,10 @@
   display: block;
 }
 
+.showMobile{
+  display: none;
+}
+
 /* Grid */
 
 .layout-half {
@@ -267,6 +271,10 @@ footer {
     width: auto;
   }
 
+  .showMobile{
+    display: block;
+  }
+
   .MobileCenter {
     display: flex;
     justify-content: center;
@@ -343,6 +351,10 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #ParentWrapper {
     width: auto;
+  }
+
+  .showMobile{
+    display: none;
   }
 
   .container {
