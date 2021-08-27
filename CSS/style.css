@@ -27,6 +27,7 @@
   padding: 0 3rem;
 }
 
+
 .initial-barrier {
   margin: 4rem 0 0 0;
 }
@@ -37,7 +38,9 @@
   width: 100%;
   justify-content: space-between;
 }
-
+.wrapContent a{
+  text-decoration: none;
+}
 .circleGOLD::after {
   content: "";
   position: absolute;

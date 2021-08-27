@@ -1,0 +1,18 @@
+@import url(style.css);
+.bg-card{
+    background-color: #0c1218;
+    border: none;
+}
+.title-tokoh{
+    line-height: normal;
+}
+.text-white{
+    color: white;
+}
+.weight-font h2{
+    font-weight: 500;
+}
+.weight-font h1{
+    color: var(--gold);
+    text-decoration: underline;
+}
