@@ -1,0 +1,15 @@
+.title-tokoh{
+    padding-bottom: 20px;
+}
+.CardTwo {
+    width: 50%;
+    height: auto;
+    position: relative;
+    padding: 30px;
+}
+.CardTwo span{
+    color: var(--gold);
+}
+.img-tokoh{
+    margin-right: 50px;
+}

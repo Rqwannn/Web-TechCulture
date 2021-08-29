@@ -16,3 +16,6 @@
     color: var(--gold);
     text-decoration: underline;
 }
+#text-gold h1{
+    color: var(--gold);
+}

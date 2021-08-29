@@ -70,6 +70,9 @@
     margin: 5% 0;
     width: 100%;
 }
+.eduFullCard a{
+    text-decoration: none;
+}
 
 .eduFullCard h1 {
     font-size: 42px;
@@ -92,4 +95,9 @@
     transform: translateY(-50%);
     right: 30px;
     width: 40px;
+}
+.bg-white{
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
 }
