@@ -1,0 +1,134 @@
+@import url(style.css);
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginForm,
+.RegisterForm {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.Auth {
+  width: 500px;
+}
+
+.TitleAuth {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.TitleAuth:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  background: var(--gold);
+  bottom: -1rem;
+}
+
+.TitleAuth h1 {
+  color: #fff;
+}
+
+.CardAuth {
+  width: 100%;
+  padding: 25px 0;
+  border: 1.5px solid var(--white);
+  border-radius: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group {
+  margin: 1.5rem 0;
+}
+
+.input-group label {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  background: var(--gray);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.input-group button {
+  background: var(--gold);
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+  width: 150px;
+  border-radius: 5px;
+  color: var(--white);
+}
+
+.FooterCard p {
+  color: var(--white);
+  margin-top: 20px;
+}
+
+.FooterCard a {
+  color: var(--white);
+}
+
+@media (min-width: 0px) and (max-width: 765px) {
+  .RegisterForm {
+    margin: 1rem 0;
+  }
+
+  .LoginForm {
+    min-height: 90vh;
+  }
+
+  .input-wrapper,
+  .input-login {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .input-wrapper .input-group input,
+  .input-login .input-group input {
+    width: 300px;
+  }
+
+  .TitleAuth:after {
+    bottom: -1.5rem;
+  }
+
+  .container {
+    padding: 0 5px;
+  }
+
+  .TitleAuth {
+    margin: 1rem 0;
+  }
+
+  .input-group {
+    margin: 1.5rem 0;
+  }
+
+  .Auth {
+    width: 300px;
+  }
+
+  .CardAuth {
+    border: 0;
+  }
+
+  .FooterCard p {
+    margin-top: 0px;
+  }
+}
