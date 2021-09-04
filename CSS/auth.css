@@ -48,6 +48,8 @@ body {
 }
 
 .input-group {
+  width: 100%;
+  padding: 0 10px;
   margin: 1.5rem 0;
 }
 
@@ -94,6 +96,7 @@ body {
 
   .input-wrapper,
   .input-login {
+    width: 100%;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -101,7 +104,7 @@ body {
 
   .input-wrapper .input-group input,
   .input-login .input-group input {
-    width: 300px;
+    width: 100%;
   }
 
   .TitleAuth:after {
@@ -121,7 +124,7 @@ body {
   }
 
   .Auth {
-    width: 300px;
+    width: 350px;
   }
 
   .CardAuth {
@@ -130,5 +133,11 @@ body {
 
   .FooterCard p {
     margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .Auth {
+    width: 1250px;
   }
 }

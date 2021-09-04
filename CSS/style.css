@@ -199,7 +199,8 @@
 body {
   overflow-x: hidden;
   background-color: var(--primaryColor);
-  font-family: "Roboto", sans-serif;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
 }
 
 .navbar {
