@@ -203,6 +203,32 @@ body {
     "Helvetica", "Arial", sans-serif;
 }
 
+.WrapperCircleUp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: var(--gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  color: var(--white);
+  z-index: 120;
+  transition: 0.5s;
+}
+
+.WrapperCircleUp i {
+  font-size: 20px;
+}
+
+.SlideUpOpacity {
+  opacity: 1;
+}
+
 .navbar {
   z-index: 100;
   top: 0;
