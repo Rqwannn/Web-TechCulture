@@ -19,6 +19,11 @@
   font-size: 28px;
 }
 
+.WrapperManipulation {
+  overflow-y: hidden;
+  transition: 0.7s;
+}
+
 @media (min-width: 0px) and (max-width: 765px) {
   .jobTitle h1 {
     font-size: 36px;

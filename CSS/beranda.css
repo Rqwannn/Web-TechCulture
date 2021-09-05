@@ -312,6 +312,7 @@
   position: relative;
   border: 2px solid var(--white);
   padding: 30px;
+  transition: 0.7s;
   border-radius: 10px;
 }
 
