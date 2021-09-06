@@ -71,13 +71,8 @@
   background-color: var(--gold);
 }
 
-.contents-bottom-information h1 {
-  font-size: 28px;
-  color: var(--white);
-}
-
-.contents-bottom-information h2 {
-  font-size: 36px;
+.contents-bottom-information p {
+  font-size: 25px;
   color: var(--white);
 }
 
@@ -410,15 +405,6 @@
     width: 100%;
   }
 
-  .contents-bottom-information h1 {
-    font-size: 21px;
-    margin-bottom: 10px;
-  }
-
-  .contents-bottom-information h2 {
-    font-size: 18px;
-  }
-
   .BerandaIMG {
     max-width: 100%;
   }
@@ -601,15 +587,6 @@
   .SelectedStar-2 {
     display: none;
   }
-
-  .contents-bottom-information h1 {
-    font-size: 24px;
-  }
-
-  .contents-bottom-information h2 {
-    font-size: 32px;
-  }
-
   .CardTwoPart {
     margin: 5% 0;
     width: 100%;
