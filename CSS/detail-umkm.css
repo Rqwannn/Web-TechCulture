@@ -1,0 +1,10 @@
+.makeCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gmbr-umkm img{
+    width: 90%;
+    height: 90%;
+    margin-top: 53px;
+}
