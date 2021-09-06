@@ -207,3 +207,11 @@ function Newest(){
         New = 0;
     }
 }
+
+const menuToggle = document.querySelector('.menu-toggle');
+
+menuToggle.addEventListener('click', function(){
+  const NavMobile = document.querySelector('.Nav-Mobile');
+
+  NavMobile.classList.toggle('SlideOpen');
+});
