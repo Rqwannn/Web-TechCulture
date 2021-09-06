@@ -1,6 +1,6 @@
 ## InDev
 
-### Aplikasi Front End
+### Cara menjalan kode
 
 - Buka dengan localhost agar file .htaccess bekerja
 - Atau buka di browser dengan alamat: http://localhost/Web-TechCulture/index
