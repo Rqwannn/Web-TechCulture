@@ -201,6 +201,7 @@ body {
   background-color: var(--primaryColor);
   font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif;
+  transition: 0.7s;
 }
 
 .WrapperCircleUp {
@@ -448,6 +449,11 @@ footer {
   .FooterContentLeft h3 {
     font-size: 15px;
   }
+}
+
+.WrapperManipulation {
+  overflow-y: hidden;
+  transition: 0.7s;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
