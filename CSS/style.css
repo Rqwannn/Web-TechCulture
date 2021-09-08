@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&display=swap");
 
 :root {
   --primaryColor: #151b22;
   --secondColor: #383838;
   --black: #000;
   --white: #fff;
-  --gold: #d29922;
+  --gold: #f0b028;
   --gray: #e5e5e5;
 }
 .FooterContentLeft {
@@ -116,6 +117,10 @@
   flex-direction: column;
 }
 
+.direction-column {
+  flex-direction: column;
+}
+
 /* Center To Parent */
 
 .toCenter {
@@ -210,9 +215,20 @@
 body {
   overflow-x: hidden;
   background-color: var(--primaryColor);
-  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif;
   transition: 0.7s;
+}
+
+h1,
+h2,
+h3,
+div,
+button {
+  font-family: "Playfair Display", serif;
+}
+
+p,
+li {
+  font-family: "Cabin", sans-serif;
 }
 
 .WrapperCircleUp {
@@ -396,11 +412,17 @@ footer {
 .FooterContentRight h3,
 .FooterContentLeft h3 {
   color: var(--white);
+  font-family: "Cabin", sans-serif;
   line-height: 25px;
 }
 
 .FooterContentLeft:nth-child(2) {
   margin-left: 100px;
+}
+
+.WrapperManipulation {
+  overflow-y: hidden;
+  transition: 0.7s;
 }
 
 @media (min-width: 0px) and (max-width: 765px) {
@@ -487,11 +509,6 @@ footer {
   .FooterContentLeft h3 {
     font-size: 15px;
   }
-}
-
-.WrapperManipulation {
-  overflow-y: hidden;
-  transition: 0.7s;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {

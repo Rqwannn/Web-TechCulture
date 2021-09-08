@@ -150,6 +150,12 @@
   color: var(--white);
 }
 
+.TitleSelected h3 {
+  margin-top: 20px;
+  color: var(--gold);
+  font-size: 24px;
+}
+
 .CardThreePart {
   width: 31%;
   height: auto;
@@ -159,6 +165,10 @@
   border-radius: 10px;
 }
 
+.AboutUs {
+  padding: 25px 20px;
+}
+
 .CardThreePart h2 {
   font-size: 28px;
   margin-bottom: 20px;
@@ -166,11 +176,27 @@
 
 .CardThreePart h1 {
   font-size: 42px;
+  font-weight: bold;
   color: var(--white);
 }
 
 .CardThreePart:nth-child(2) {
   margin: 0 2%;
+}
+
+.AboutUs p {
+  font-size: 18px;
+  color: var(--white);
+}
+
+.AboutUs p:nth-child(3) {
+  color: var(--gold);
+  margin: 5px 0;
+}
+
+.IMGAboutUs {
+  width: 100%;
+  padding-bottom: 20px;
 }
 
 .CardBottom {
@@ -201,6 +227,7 @@
 
 .TitleInfo h3 {
   color: var(--gold);
+  font-family: "Cabin", sans-serif;
   font-size: 24px;
   margin: 1.5rem 0 2.5rem 0;
 }

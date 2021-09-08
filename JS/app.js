@@ -2,15 +2,20 @@ window.addEventListener("scroll", function () {
     const Navbar = document.querySelector(".navbar");
     const WrapperCircleUp= document.querySelector('.WrapperCircleUp');
 
-    WrapperCircleUp.classList.toggle('SlideUpOpacity', window.scrollY > 0);
-    Navbar.classList.toggle("PassScroll", window.scrollY > 0);
+    if(Navbar != null){
+      WrapperCircleUp.classList.toggle('SlideUpOpacity', window.scrollY > 0);
+      Navbar.classList.toggle("PassScroll", window.scrollY > 0);
+    }
+
   });
 
   const Menu = document.querySelector(".menu-toggle");
 
-  Menu.addEventListener("click", () => {
-      Menu.classList.toggle("open");
-  });
+  if(Menu != null){
+    Menu.addEventListener("click", () => {
+        Menu.classList.toggle("open");
+    });
+  }
 
   function ScroolTop(){
       window.scrollTo({
@@ -25,33 +30,30 @@ const CardFull1 = `<div class="cardFull bottom-5">
 <div class="wrapContent">
   <div class="layout-half toCenter CostumTabLayout">
     <div class="WrapperUMKM">
-      <h2 style="text-align: start">
-        <span>The Largest</span> integrated Fishers commerce in
-        indonesia
-      </h2>
-      <h1 class="hiddenMobile hiddenTab">ARUNA</h1>
-      <p class="hiddenMobile hiddenTab">
-        Making the Sea a Better Livelihood for All Aruna aims to
-        connect the small-scale fishers to the global exposure in
-        promoting the delectable seafood of Indonesia; through the
-        wholesale deal, retail shopping, and business partnership.
-      </p>
-      <div class="btn-right">
-        <img src="../Image/Button-right.png" width="40" />
-      </div>
+      <a href="detail-umkm1.html">
+        <h2 style="text-align: start;">
+          Perdagangan Nelayan Terintegrasi <span>Terbesar </span> di Indonesia
+        </h2>
+        <h1 class="hiddenMobile hiddenTab">ARUNA</h1>
+        <p class="hiddenMobile hiddenTab">
+          Membuat laut menjadi mata pencaharian yang lebih baik untuk semua. Aruna bertujuan untuk menghubungkan para nelayan skala kecil dengan eksposur global dalam mempromosikan makanan laut Indonesia yang lezat melalui kesepakatan grosir, belanja eceran, dan kemitraan bisnis.
+        </p>
+        <div class="btn-right">
+          <img src="../Image/Button-right.png" width="40" />
+        </div>
+      </a>
     </div>
   </div>
   <div class="layout-half imgPenyu">
     <div class="wrapContent">
       <img src="../Image/penyu.png" style="width: 100%" />
       <div class="WrapperUMKM">
-        <h1 class="hiddenWeb">ARUNA</h1>
+        <a href="detail-umkm1.html">
+          <h1 class="hiddenWeb">ARUNA</h1>
         <p class="hiddenWeb">
-          Making the Sea a Better Livelihood for All Aruna aims to
-          connect the small-scale fishers to the global exposure in
-          promoting the delectable seafood of Indonesia; through the
-          wholesale deal, retail shopping, and business partnership.
+          Membuat laut menjadi mata pencaharian yang lebih baik untuk semua. Aruna bertujuan untuk menghubungkan para nelayan skala kecil dengan eksposur global dalam mempromosikan makanan laut Indonesia yang lezat melalui kesepakatan grosir, belanja eceran, dan kemitraan bisnis.
         </p>
+        </a>
       </div>
       <div class="btn-left">
         <img src="../Image/Button-right.png" width="40" />
@@ -68,14 +70,16 @@ const CardFull2 = `<div class="cardFull bottom-5">
 <div class="wrapContent">
   <div class="layout-half toCenter CostumTabLayout">
     <div class="WrapperUMKM">
-      <h2 style="text-align: start">
-        <span>The Largest</span> integrated Fishers commerce in
-        indonesia
-      </h2>
-      <h1 class="hiddenMobile hiddenTab">ARUNA</h1>
-      <p class="hiddenMobile hiddenTab">
-        Through Halodoc, people can talk to a doctor, buy medicine, and do laboratory tests[3]. Everything is done via smartphone anytime and anywhere for 24/7 . The goal of Halodoc is simplifying healthcare, which facilitates access to healthcare for all Indonesian people.
-      </p>
+      <a href="detail-umkm2.html">
+        <h2 style="text-align: start">
+          Pengaruh teknologi dibidang
+          <span>kedokteran</span>
+        </h2>
+        <h1 class="hiddenMobile hiddenTab">Halodoc</h1>
+        <p class="hiddenMobile hiddenTab">
+          Melalui Halodoc, masyarakat dapat berbicara dengan dokter, membeli obat, dan melakukan pemeriksaan laboratorium[3]. Semuanya dilakukan melalui smartphone kapan saja dan di mana saja selama 24/7. Tujuan Halodoc adalah menyederhanakan layanan kesehatan, yang memfasilitasi akses layanan kesehatan bagi seluruh masyarakat Indonesia.
+        </p>
+      </a>
       <div class="btn-right">
         <img src="../Image/Button-right.png" width="40" />
       </div>
@@ -85,10 +89,12 @@ const CardFull2 = `<div class="cardFull bottom-5">
     <div class="wrapContent">
       <img src="../Image/doc.png" style="width: 100%" />
       <div class="WrapperUMKM">
-        <h1 class="hiddenWeb">ARUNA</h1>
-        <p class="hiddenWeb">
-          Through Halodoc, people can talk to a doctor, buy medicine, and do laboratory tests[3]. Everything is done via smartphone anytime and anywhere for 24/7 . The goal of Halodoc is simplifying healthcare, which facilitates access to healthcare for all Indonesian people.
-        </p>
+        <a href="detail-umkm2.html">
+          <h1 class="hiddenWeb">Halodoc</h1>
+          <p class="hiddenWeb">
+            Melalui Halodoc, masyarakat dapat berbicara dengan dokter, membeli obat, dan melakukan pemeriksaan laboratorium[3]. Semuanya dilakukan melalui smartphone kapan saja dan di mana saja selama 24/7. Tujuan Halodoc adalah menyederhanakan layanan kesehatan, yang memfasilitasi akses layanan kesehatan bagi seluruh masyarakat Indonesia.
+          </p>
+        </a>
       </div>
       <div class="btn-left">
         <img src="../Image/Button-right.png" width="40" />
@@ -101,18 +107,20 @@ const CardFull2 = `<div class="cardFull bottom-5">
 </div>
 </div>`;
 
-const CardFull3 = `<div class="cardFull bottom-5">
+const CardFull3 = `            <div class="cardFull bottom-5">
 <div class="wrapContent">
   <div class="layout-half toCenter CostumTabLayout">
     <div class="WrapperUMKM">
-      <h2 style="text-align: start">
-        <span>The Largest</span> integrated Fishers commerce in
-        indonesia
-      </h2>
-      <h1 class="hiddenMobile hiddenTab">ARUNA</h1>
-      <p class="hiddenMobile hiddenTab">
-        Ruangguru mengembangkan berbagai layanan belajar berbasis teknologi, termasuk layanan kelas virtual, platform ujian online, video belajar berlangganan, marketplace les privat, serta konten-konten pendidikan lainnya yang bisa diakses melalui web dan aplikasi Ruangguru.
-      </p>
+      <a href="detail-umkm3.html">
+        <h2 style="text-align: start">
+          <span>Belajar</span>
+          Belajar sekarang lebih mudah! Dimana saja kapan saja!
+        </h2>
+        <h1 class="hiddenMobile hiddenTab">Ruang Guru</h1>
+        <p class="hiddenMobile hiddenTab">
+          Ruangguru mengembangkan berbagai layanan belajar berbasis teknologi, termasuk layanan kelas virtual, platform ujian online, video belajar berlangganan, marketplace les privat, serta konten-konten pendidikan lainnya yang bisa diakses melalui web dan aplikasi Ruangguru.
+        </p>
+      </a>
       <div class="btn-right">
         <img src="../Image/Button-right.png" width="40" />
       </div>
@@ -122,10 +130,12 @@ const CardFull3 = `<div class="cardFull bottom-5">
     <div class="wrapContent">
       <img src="../Image/rg.png" style="width: 100%" />
       <div class="WrapperUMKM">
-        <h1 class="hiddenWeb">ARUNA</h1>
-        <p class="hiddenWeb">
-          Ruangguru mengembangkan berbagai layanan belajar berbasis teknologi, termasuk layanan kelas virtual, platform ujian online, video belajar berlangganan, marketplace les privat, serta konten-konten pendidikan lainnya yang bisa diakses melalui web dan aplikasi Ruangguru.
-        </p>
+        <a href="detail-umkm3.html">
+          <h1 class="hiddenWeb">Ruang Guru</h1>
+          <p class="hiddenWeb">
+            Ruangguru mengembangkan berbagai layanan belajar berbasis teknologi, termasuk layanan kelas virtual, platform ujian online, video belajar berlangganan, marketplace les privat, serta konten-konten pendidikan lainnya yang bisa diakses melalui web dan aplikasi Ruangguru.
+          </p>
+        </a>
       </div>
       <div class="btn-left">
         <img src="../Image/Button-right.png" width="40" />
@@ -221,11 +231,14 @@ function Newest(e){
 
 const menuToggle = document.querySelector('.menu-toggle');
 
-menuToggle.addEventListener('click', function(){
-  const NavMobile = document.querySelector('.Nav-Mobile');
+if(menuToggle != null){
+  menuToggle.addEventListener('click', function(){
+    const NavMobile = document.querySelector('.Nav-Mobile');
+  
+    NavMobile.classList.toggle('SlideOpen');
+  });
+}
 
-  NavMobile.classList.toggle('SlideOpen');
-});
 
 let HardSkill = 1;
 let Technology = 1;
