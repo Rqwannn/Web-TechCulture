@@ -3,6 +3,7 @@
 :root {
   --primaryColor: #151b22;
   --secondColor: #383838;
+  --black: #000;
   --white: #fff;
   --gold: #d29922;
   --gray: #e5e5e5;
@@ -186,6 +187,12 @@
   color: var(--white);
 }
 
+.Btn-primary.Btn-primary-active {
+  background: var(--white);
+  color: var(--primaryColor);
+  transition: 0.7s;
+}
+
 .btn-group {
   margin: 2.5rem 0;
   display: flex;
@@ -263,11 +270,34 @@ body {
   padding: 0 20px;
   font-size: 20px;
   list-style: none;
+  position: relative;
+}
+
+.navbar .nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 1.5px;
+  background: var(--gold);
+  display: block;
+  transition: 0.5s;
+}
+
+.navbar .nav-links ul li:hover:after {
+  width: 100%;
+}
+
+.navbar .nav-links ul li:hover a {
+  color: var(--gold);
 }
 
 .navbar .nav-links ul li a {
   color: var(--white);
+  transition: 0.5s;
   text-decoration: none;
+}
+
+.navbar .nav-links ul li a.ActiveNav {
+  color: var(--gold);
 }
 
 .navbar .menu-toggle {
@@ -318,6 +348,10 @@ body {
   color: var(--white);
 }
 
+.Nav-Mobile ul li a.ActiveNav {
+  color: var(--gold);
+}
+
 .bar {
   background: var(--white);
   width: 100%;
@@ -358,7 +392,7 @@ footer {
 .FooterContentRight h3,
 .FooterContentLeft h3 {
   color: var(--white);
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .FooterContentLeft:nth-child(2) {

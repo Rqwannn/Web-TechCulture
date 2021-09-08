@@ -31,7 +31,7 @@
             <a href="../index"> Home </a>
           </li>
           <li>
-            <a href="eduspace"> EduSpace </a>
+            <a href="eduspace" class="ActiveNav"> EduSpace </a>
           </li>
           <li>
             <a href="inspo"> Inspo </a>
@@ -40,7 +40,7 @@
             <a href="jobCenter"> UMKM </a>
           </li>
           <li>
-            <a href="Auth/login"> Login </a>
+            <a href="../Auth/login"> Login </a>
           </li>
         </ul>
         <label for="check" class="menu-toggle">
@@ -58,7 +58,7 @@
               <a href="../index"> Home </a>
             </li>
             <li>
-              <a href="eduspace"> EduSpace </a>
+              <a href="eduspace" class="ActiveNav"> EduSpace </a>
             </li>
             <li>
               <a href="inspo"> Inspo </a>
@@ -67,7 +67,7 @@
               <a href="jobCenter"> UMKM </a>
             </li>
             <li>
-              <a href="Auth/login"> Login </a>
+              <a href="../Auth/login"> Login </a>
             </li>
           </ul>
       </div>
@@ -126,18 +126,18 @@
       <section class="edu-nav">
         <div class="all-edu">
           <div class="edu-card">
-            <div class="make-center" onclick="HardSkillEvent()">
+            <div class="make-center" onclick="HardSkillEvent(event)">
               <a href="#">Hard Skill</a>
             </div>
           </div>
           <div class="edu-card" style="margin-left: 11px">
-            <div class="make-center" onclick="TechnologyEvent()">
+            <div class="make-center" onclick="TechnologyEvent(event)">
               <a href="#">Technology</a>
             </div>
           </div>
-          <div class="edu-card" style="margin-left: 11px">
-            <div class="make-center" onclick="SoftSkillEvent()">
-              <a href="#">Soft Skill</a>
+          <div class="edu-card ActiveEduBtn" style="margin-left: 11px">
+            <div class="make-center" onclick="SoftSkillEvent(event)">
+              <a href="#" class="ActiveEduBtn">Soft Skill</a>
             </div>
           </div>
         </div>

@@ -172,8 +172,14 @@ function SetAnime(cardFull){
     },1500)
 }
 
-function Oldeset(){
+function Oldeset(e){
     if(Old == 1){
+      
+        if(e.target.classList.value != "Btn-primary-active"){
+          e.target.classList.add("Btn-primary-active");
+          e.target.parentNode.childNodes[1].classList.remove("Btn-primary-active");
+        } 
+
         const getCard = setCARD(3, 1);
         document.querySelector('.WrapperManipulation').innerHTML = getCard;
     
@@ -190,8 +196,13 @@ function Oldeset(){
     }
 }
 
-function Newest(){
+function Newest(e){
     if(New == 1){
+        if(e.target.classList.value != "Btn-primary-active"){
+          e.target.classList.add("Btn-primary-active");
+          e.target.parentNode.childNodes[3].classList.remove("Btn-primary-active");
+        }
+
         const getCard = setCARD(1, 3);
         document.querySelector('.WrapperManipulation').innerHTML = getCard;
     
@@ -356,8 +367,19 @@ function getClass(){
   return data;
 }
 
-function HardSkillEvent(){
+function HardSkillEvent(e){
   if(HardSkill == 1){
+    if(e.target.parentNode.classList.value != "ActiveEduBtn"){
+      const ActiveEduBtn = document.querySelectorAll('.ActiveEduBtn');
+
+      [...ActiveEduBtn].forEach(result => {
+        result.classList.remove('ActiveEduBtn');
+      });
+
+      e.target.parentNode.classList.add("ActiveEduBtn");
+      e.target.childNodes[1].classList.add("ActiveEduBtn");
+    }
+
     const getCard = setCARDEdu(3, 1);
     document.querySelector('.WrapperManipulation').innerHTML = getCard;
     
@@ -377,8 +399,19 @@ function HardSkillEvent(){
   }
 }
 
-function TechnologyEvent(){
+function TechnologyEvent(e){
   if(Technology == 1){
+    if(e.target.parentNode.classList.value != "ActiveEduBtn"){
+      const ActiveEduBtn = document.querySelectorAll('.ActiveEduBtn');
+
+      [...ActiveEduBtn].forEach(result => {
+        result.classList.remove('ActiveEduBtn');
+      });
+
+      e.target.parentNode.classList.add("ActiveEduBtn");
+      e.target.childNodes[1].classList.add("ActiveEduBtn");
+    }
+
     const getCard = setCARDEdu(2, 1);
     document.querySelector('.WrapperManipulation').innerHTML = getCard;
     
@@ -398,8 +431,18 @@ function TechnologyEvent(){
   }
 }
 
-function SoftSkillEvent(){
+function SoftSkillEvent(e){
   if(SoftSkill == 1){
+    if(e.target.parentNode.classList.value != "ActiveEduBtn"){
+      const ActiveEduBtn = document.querySelectorAll('.ActiveEduBtn');
+
+      [...ActiveEduBtn].forEach(result => {
+        result.classList.remove('ActiveEduBtn');
+      });
+
+      e.target.parentNode.classList.add("ActiveEduBtn");
+      e.target.childNodes[1].classList.add("ActiveEduBtn");
+    }
     const getCard = setCARDEdu(1, 3);
     document.querySelector('.WrapperManipulation').innerHTML = getCard;
     
