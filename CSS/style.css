@@ -8,6 +8,10 @@
   --gold: #d29922;
   --gray: #e5e5e5;
 }
+.FooterContentLeft {
+  text-decoration: none;
+  color: #fff;
+}
 .text-white {
   color: var(--white);
 }

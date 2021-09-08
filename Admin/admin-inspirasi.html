@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/auth.css">
+    <link rel="stylesheet" href="../CSS/admin.css">
+    
+    <script src="https://kit.fontawesome.com/d1a508a7c1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Image/logo/logo80.png" type="image/x-icon" style="height: 20px;">
+    <title>Admin</title>
+</head>
+<body>
+    
+    
+        <div class="sidebar" id="nav">
+            <div class="logo">
+                <img src="../Image/logo/logo80.png" alt="">
+                <div id="btn" onclick="toggleNav()">
+                    
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                
+            </div>
+            </div>
+            <div class="link-sidebar">
+                <ul>
+                    <li class="top-40"><a href="admin.html">EduSpace</a></li>
+                    <li class="top-40"><a href="admin-inspo.html">Inspo</a></li>
+                    <li class="top-40"><a href="admin-umkm.html">UMKM</a></li>
+                    <li class="top-40 active"><a href="admin-inspirasi.html">Inspirasi</a></li>
+                </ul>
+            </div>
+        </div>
+<button id="btn" onclick="toggleNav()">
+Menu</button>
+        <div class="all-form">
+            <div class="container">
+                <div class="title-admin">
+                    <h1>
+                        Tambah Inspirasi
+                    </h1>
+                </div>
+                <form action="" method="POST">
+                    <div class="input-wrapper">
+                        <div class="input-group ColumnFlex">
+                            <label for="Name">Judul</label>
+                            <input type="text" id="Judul" placeholder="Judul EduSpace">
+                        </div>
+                        <div class="input-group ColumnFlex">
+                            <label for="Gambar">Gambar</label>
+                            <input type="file" accept="image/" id="gambarEdu" >
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="input-group ColumnFlex">
+                            <label for="linkSumber">Link Sumber</label>
+                            <input type="url" id="linkSumber" placeholder="http://">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="input-group ColumnFlex">
+                            <label for="isiKonten">Isi Konten</label>
+                            <textarea name="isiKonten" id="kontenEdu" style="width: 100%; height: 300px;" ></textarea>
+                        </div>
+                        
+                    </div>
+                    <div class="input-group toHorizontalCenter">
+                        <button type="submit">Kirim</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+            
+
+    <script src="../JS/app.js"></script>
+    <script src="../JS/admin.js"></script>
+</body>
+</html>
