@@ -1,7 +1,8 @@
 @import url(style.css);
 
 .top-15-minus {
-  margin-top: -15rem;
+  transform: translateY(-15rem);
+  margin-bottom: -15rem;
 }
 
 .bottom-5 {
@@ -77,7 +78,8 @@
 
 @media (min-width: 0px) and (max-width: 765px) {
   .top-15-minus {
-    margin-top: 0;
+    transform: translateY(0);
+    margin-bottom: 0;
   }
 
   .Right-Padding,
@@ -87,6 +89,7 @@
 
   .inspoTitle {
     width: 100%;
+    margin-bottom: 10%;
   }
 
   .inspoTitle h1 {
@@ -117,14 +120,14 @@
     margin-bottom: 5%;
   }
 
-  .top-5 {
-    margin-top: 0;
+  .bottom-5 {
+    margin-bottom: 0;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .top-15-minus {
-    margin-top: -8rem;
+    transform: translateY(-8rem);
   }
 
   .cardInfo {
