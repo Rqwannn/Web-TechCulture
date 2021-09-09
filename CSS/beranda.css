@@ -41,28 +41,46 @@
 }
 
 .gambar-utama {
-  height: 475px;
+  width: 250px;
+  height: 250px;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -60%);
+  bottom: 0%;
+  transform: translateX(-50%);
 }
 
-.posisi-mawar-1,
-.posisi-mawar-2 {
+.posisi-bintang-1,
+.posisi-bintang-2,
+.posisi-bintang-3,
+.posisi-bintang-4 {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
   z-index: 1;
 }
 
-.posisi-mawar-1 {
-  left: -20px;
-  top: 45px;
+.posisi-bintang-1 {
+  left: -25px;
+  top: 120px;
+  width: 100px;
+  height: 100px;
 }
-.posisi-mawar-2 {
-  right: 0px;
-  bottom: -75px;
+
+.posisi-bintang-2 {
+  left: 25px;
+  bottom: 25px;
+}
+
+.posisi-bintang-3 {
+  right: 50px;
+  top: 150px;
+}
+
+.posisi-bintang-4 {
+  right: -25px;
+  top: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 .bottom-information {
@@ -386,8 +404,19 @@
     height: 319px;
   }
 
+  .posisi-bintang-2 {
+    left: 7px;
+    bottom: 7px;
+  }
+
+  .posisi-bintang-3 {
+    right: 35px;
+    top: 145px;
+  }
+
   .gambar-utama {
-    height: 400px;
+    width: 175px;
+    height: 175px;
   }
 
   .wrapperImage {

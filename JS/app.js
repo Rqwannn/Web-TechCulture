@@ -196,7 +196,7 @@ function Oldeset(e){
         const cardFull = document.querySelectorAll('.cardFull');
     
         cardFull.forEach( result => {
-            result.style.transform = "translateY(-330%)"
+            result.style.transform = "translateY(-350%)"
         })
     
         SetAnime(cardFull);
@@ -219,7 +219,7 @@ function Newest(e){
         const cardFull = document.querySelectorAll('.cardFull');
     
         cardFull.forEach( result => {
-            result.style.transform = "translateY(-330%)"
+            result.style.transform = "translateY(-350%)"
         })
     
         SetAnime(cardFull);
@@ -399,10 +399,10 @@ function HardSkillEvent(e){
     const getNode = getClass(); 
     
     getNode.CardTwoPart.forEach(result => {
-      result.style.transform = 'translateY(-270%)';
+      result.style.transform = 'translateY(-280%)';
     });
-    getNode.EduFullCard.style.transform = 'translateY(-270%)';
-    getNode.WrapCardTwo.style.transform = 'translateY(-270%)';
+    getNode.EduFullCard.style.transform = 'translateY(-280%)';
+    getNode.WrapCardTwo.style.transform = 'translateY(-280%)';
 
     SetAnimeEdu(getNode.CardTwoPart, getNode.WrapCardTwo, getNode.EduFullCard, Status=1);
 
@@ -431,10 +431,10 @@ function TechnologyEvent(e){
     const getNode = getClass(); 
     
     getNode.CardTwoPart.forEach(result => {
-      result.style.transform = 'translateY(-270%)';
+      result.style.transform = 'translateY(-280%)';
     });
-    getNode.EduFullCard.style.transform = 'translateY(-270%)';
-    getNode.WrapCardTwo.style.transform = 'translateY(-270%)';
+    getNode.EduFullCard.style.transform = 'translateY(-280%)';
+    getNode.WrapCardTwo.style.transform = 'translateY(-280%)';
 
     SetAnimeEdu(getNode.CardTwoPart, getNode.WrapCardTwo, getNode.EduFullCard, Status=2);
 
@@ -462,10 +462,10 @@ function SoftSkillEvent(e){
     const getNode = getClass(); 
     
     getNode.CardTwoPart.forEach(result => {
-      result.style.transform = 'translateY(-270%)';
+      result.style.transform = 'translateY(-280%)';
     });
-    getNode.EduFullCard.style.transform = 'translateY(-270%)';
-    getNode.WrapCardTwo.style.transform = 'translateY(-270%)';
+    getNode.EduFullCard.style.transform = 'translateY(-280%)';
+    getNode.WrapCardTwo.style.transform = 'translateY(-280%)';
 
     SetAnimeEdu(getNode.CardTwoPart, getNode.WrapCardTwo, getNode.EduFullCard, Status=2);
 
@@ -473,4 +473,8 @@ function SoftSkillEvent(e){
     Technology = 1;
     SoftSkill = 0;
   }
+}
+
+function DisableLink(e){
+  e.preventDefault();
 }
