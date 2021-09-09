@@ -114,7 +114,7 @@ const CardFull3 = `            <div class="cardFull bottom-5">
       <a href="detail-umkm3.html">
         <h2 style="text-align: start">
           <span>Belajar</span>
-          Belajar sekarang lebih mudah! Dimana saja kapan saja!
+          sekarang lebih mudah! Dimana saja kapan saja!
         </h2>
         <h1 class="hiddenMobile hiddenTab">Ruang Guru</h1>
         <p class="hiddenMobile hiddenTab">
@@ -266,8 +266,7 @@ const CardEdu2 = `<div class="CardTwoPart">
         </h1>
           
         <p>
-          Dibalik kesuksesan seseorang,mereka memiliki kebiasaan yang baik.
-          Dengan memiliki habit yang baik hidup akan lebih bermakna
+          Berbagi tips mengenai bagaimana cara menjadi fullstack developer pemula.
         </p>
         <img src="../Image/Button-right.png" />
       </a>
@@ -280,8 +279,7 @@ const CardEdu3 = `<div class="cardFull eduFullCard">
           <span>FullStack</span> Developer
         </h1>
         <p>
-          Dibalik kesuksesan seseorang,mereka memiliki kebiasaan yang baik.
-          Dengan memiliki habit yang baik hidup akan lebih bermakna
+          Berbagi pengetahuan bagaimana cara menjadi seorang fullstack developer yang handal di mulai dari nol
         </p>
         <img src="../Image/Button-right.png" />
 
@@ -399,10 +397,10 @@ function HardSkillEvent(e){
     const getNode = getClass(); 
     
     getNode.CardTwoPart.forEach(result => {
-      result.style.transform = 'translateY(-280%)';
+      result.style.transform = 'translateY(-300%)';
     });
-    getNode.EduFullCard.style.transform = 'translateY(-280%)';
-    getNode.WrapCardTwo.style.transform = 'translateY(-280%)';
+    getNode.EduFullCard.style.transform = 'translateY(-300%)';
+    getNode.WrapCardTwo.style.transform = 'translateY(-300%)';
 
     SetAnimeEdu(getNode.CardTwoPart, getNode.WrapCardTwo, getNode.EduFullCard, Status=1);
 
@@ -431,10 +429,10 @@ function TechnologyEvent(e){
     const getNode = getClass(); 
     
     getNode.CardTwoPart.forEach(result => {
-      result.style.transform = 'translateY(-280%)';
+      result.style.transform = 'translateY(-300%)';
     });
-    getNode.EduFullCard.style.transform = 'translateY(-280%)';
-    getNode.WrapCardTwo.style.transform = 'translateY(-280%)';
+    getNode.EduFullCard.style.transform = 'translateY(-300%)';
+    getNode.WrapCardTwo.style.transform = 'translateY(-300%)';
 
     SetAnimeEdu(getNode.CardTwoPart, getNode.WrapCardTwo, getNode.EduFullCard, Status=2);
 
@@ -462,10 +460,10 @@ function SoftSkillEvent(e){
     const getNode = getClass(); 
     
     getNode.CardTwoPart.forEach(result => {
-      result.style.transform = 'translateY(-280%)';
+      result.style.transform = 'translateY(-300%)';
     });
-    getNode.EduFullCard.style.transform = 'translateY(-280%)';
-    getNode.WrapCardTwo.style.transform = 'translateY(-280%)';
+    getNode.EduFullCard.style.transform = 'translateY(-300%)';
+    getNode.WrapCardTwo.style.transform = 'translateY(-300%)';
 
     SetAnimeEdu(getNode.CardTwoPart, getNode.WrapCardTwo, getNode.EduFullCard, Status=2);
 

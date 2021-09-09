@@ -1,4 +1,5 @@
 let navStatus = true;
+
 if(window.innerWidth <= 1150){
     navStatus = false
 }

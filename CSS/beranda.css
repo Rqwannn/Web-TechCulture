@@ -41,12 +41,16 @@
 }
 
 .gambar-utama {
-  width: 250px;
-  height: 250px;
+  height: 400px;
   position: absolute;
   left: 50%;
   bottom: 0%;
   transform: translateX(-50%);
+}
+
+#gambar-utama {
+  width: 250px;
+  height: 250px;
 }
 
 .posisi-bintang-1,
@@ -415,6 +419,10 @@
   }
 
   .gambar-utama {
+    height: 400px;
+  }
+
+  #gambar-utama {
     width: 175px;
     height: 175px;
   }
