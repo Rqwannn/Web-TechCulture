@@ -476,3 +476,86 @@ function SoftSkillEvent(e){
 function DisableLink(e){
   e.preventDefault();
 }
+
+const IconDarkInitial = document.querySelector('.Dark');
+
+if(IconDarkInitial != null){
+  IconDarkInitial.style.color = '#f0b028'
+}
+
+if(JSON.parse(localStorage.getItem('Mode'))){
+  const GetData = JSON.parse(localStorage.getItem('Mode'));
+  document.documentElement.style.setProperty('--primaryColor', `${GetData.ColorPrimary}`);
+  document.documentElement.style.setProperty('--white', `${GetData.ColorText}`);
+
+  if(GetData.Status == 'Light'){
+    const IconLight = document.querySelector('.Light');
+    IconLight.classList.remove('far');
+    IconLight.classList.add('fas');
+    IconLight.style.color = '#f0b028'
+
+    const IconDark = document.querySelector('.Dark');
+    IconDark.classList.remove('fas');
+    IconDark.classList.add('far');
+    IconDark.style.color = '#000'
+  } else {
+
+    const IconLight = document.querySelector('.Light');
+    IconLight.classList.remove('fas');
+    IconLight.classList.add('far');
+    IconLight.style.color = '#fff'
+
+    const IconDark = document.querySelector('.Dark');
+    IconDark.classList.remove('far');
+    IconDark.classList.add('fas');
+    IconDark.style.color = '#f0b028'
+  }
+}
+
+function LightMode(e){
+  document.documentElement.style.setProperty('--primaryColor', '#f1f1f1');
+  document.documentElement.style.setProperty('--white', '#000');
+
+  e.target.classList.remove('far');
+  e.target.classList.add('fas');
+  e.target.style.color = '#f0b028'
+
+  const IconDark = document.querySelector('.Dark');
+  IconDark.classList.remove('fas');
+  IconDark.classList.add('far');
+  IconDark.style.color = '#000'
+
+  const setData = {
+    'ColorPrimary': '#f1f1f1',
+    'ColorText' : '#000',
+    'SunClass': 'fas fa-sun',
+    'MoonClass': 'far fa-moon',
+    'Status': 'Light'
+  }
+
+  localStorage.setItem('Mode', JSON.stringify(setData))
+}
+
+function DarkMode(e){
+  document.documentElement.style.setProperty('--primaryColor', '#151b22');
+  document.documentElement.style.setProperty('--white', '#fff');
+
+  e.target.classList.remove('far');
+  e.target.classList.add('fas');
+  e.target.style.color = '#f0b028'
+
+  const IconLight = document.querySelector('.Light');
+  IconLight.classList.remove('fas');
+  IconLight.classList.add('far');
+  IconLight.style.color = '#fff'
+
+  const setData = {
+    'ColorPrimary': '#151b22',
+    'ColorText' : '#fff',
+    'SunClass': 'far fa-sun',
+    'MoonClass': 'fas fa-moon',
+    'Status': 'Dark'
+  }
+
+  localStorage.setItem('Mode', JSON.stringify(setData)) 
+}

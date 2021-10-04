@@ -36,6 +36,20 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--white);
+  border-radius: 10px;
+}
+
 /* #ParentWrapper {
   margin: 0 auto;
   width: 1250px;
@@ -267,12 +281,34 @@ li {
 }
 
 .PassScroll {
-  background: var(--secondColor);
-  border-bottom: 1.5px solid var(--secondColor);
+  background: var(--primaryColor);
+  border-bottom: 1.5px solid var(--primaryColor);
 }
 
 .navbar .LogoNav {
   font-size: 25px;
+}
+
+.navbar .nav-links {
+  display: flex;
+}
+
+.navbar .nav-links .LigtOrDarkMode {
+  font-size: 17px;
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.navbar .nav-links .LigtOrDarkMode i {
+  cursor: pointer;
+}
+
+.navbar .nav-links .LigtOrDarkMode .LineVertical {
+  width: 1.5px;
+  height: 100%;
+  margin: 0 10px;
+  background: var(--white);
 }
 
 .navbar .nav-links ul {
@@ -284,6 +320,7 @@ li {
   font-size: 20px;
   list-style: none;
   position: relative;
+  color: var(--white);
 }
 
 .navbar .nav-links ul li::after {
@@ -423,6 +460,10 @@ footer {
     width: auto;
   }
 
+  .navbar .nav-links .LigtOrDarkMode {
+    margin-right: 20px;
+  }
+
   .Nav-Mobile {
     display: initial;
   }
@@ -507,6 +548,10 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #ParentWrapper {
     width: auto;
+  }
+
+  .navbar .nav-links .LigtOrDarkMode {
+    margin-right: 20px;
   }
 
   .Nav-Mobile {
